@@ -4,7 +4,7 @@ import org.testng.annotations.Test;
 public class Pierwszytest {
     @Test
     public void test1(){
-        DriverManager.createInstance();
+        DriverManager.createInstance("firefox");
         WebDriver driver = DriverManager.getWebDriver();
         driver.get("https:www.allegro.pl");
     }
